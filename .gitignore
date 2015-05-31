@@ -1,0 +1,6 @@
+# Builded gems
+*.gem
+
+# Codeopints file (See Rakefile)
+codepoints
+unicode.css
