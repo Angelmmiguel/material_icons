@@ -82,4 +82,4 @@ This version increase the size of the CSS file too. To see the difference, these
 
 Google Material Icons are under [Creative Common Attribution 4.0 International License (CC-BY 4.0)](http://creativecommons.org/licenses/by/4.0/). But attribution [is not required](https://github.com/google/material-design-icons#license).
 
-Material Icons gem released under the MIT license.
+Material Icons gem is released under the MIT license.
