@@ -54,7 +54,7 @@ Google Material Icons uses a feature called ligatures. We can define the icon in
 An example of icon is:
 	
 	<i class="material-icons">face</i>
-	<i class="material-icons .md-36">face</i>
+	<i class="material-icons md-36">face</i>
 
 # Compatibility
 
@@ -71,7 +71,7 @@ Ligature feature requires a supported browser:
 To increase compatibility you can use Unicode version of the library. Now, the text inside of HTML tag is the CSS class! 
 
 	<i class="material-icons face"></i>
-	<i class="material-icons .md-36 face"></i>
+	<i class="material-icons md-36 face"></i>
 
 This version increase the size of the CSS file too. To see the difference, these are the size for uncompressed CSS files:
 
