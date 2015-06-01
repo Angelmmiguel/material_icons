@@ -58,6 +58,8 @@ An example of icon is:
 
 ## Helpers
 
+	*NOTE* This is a release candidate version, so you need to specify the version at Gemfile: gem 'material_icons', '~> 1.0.0rc1'
+
 MaterialIcons provide a two helpers to build the HTML code of icons. The methods are `material_icon` and `mi`. These helpers use cascade style to set the icon and options. Using same example:
 
 	<%= material_icon.face %>
