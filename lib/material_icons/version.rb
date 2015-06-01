@@ -1,7 +1,8 @@
+#
+# Define the versions of the gem and Google material icons.
+#
 module MaterialIcons
-  module Rails
-    # Version for the library and the gem
-    MATERIAL_ICONS_VERSION = '2.0.0'
-    VERSION = '0.0.5'
-  end
+  # Version for the library and the gem
+  MATERIAL_ICONS_VERSION = '2.0.0'
+  VERSION = '1.0.0rc1'
 end
