@@ -26,7 +26,7 @@ These files provide multiple CSS classes to use in your views. Main classes are:
 
 	.material-icons, .mi
 
-Some helpers are provided too:
+Some CSS classes are provided too:
 
 	/* Size */
 	.md-18
@@ -73,26 +73,26 @@ MaterialIcons provide a two helpers to build the HTML code of icons. The methods
 Predefined methods are:
 	
 	# Rotation methods
-	.r90
-	.r180
-	.r270
-	.flip_horizontal
-	.flip_vertical
+	r90
+	r180
+	r270
+	flip_horizontal
+	flip_vertical
 
 	# Size methods
-	.md_18
-	.md_24
-	.md_36
-	.md_48
+	md_18
+	md_24
+	md_36
+	md_48
 
 	# Add some classes to the icon
-	.css_class('classes')
+	css_class('classes')
 
 	# Add style to the icon
-	.style('margin-top: 5px;')
+	style('margin-top: 5px;')
 
 	# Add some HTML attributes to an icon. This method receive a Hash
-	.html({ data: { id: 1 } })
+	html({ data: { id: 1 } })
 
 Remember this is a helper, you always can use HTML syntax ;).
 
