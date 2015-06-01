@@ -74,7 +74,7 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 	<%= mi.face.r90.css_class('my_class') %>
 	# <i class="material-icons r90 my_class">face</i>
 
-Predefined methods are:
+Allowed methods are:
 	
 	# Rotation methods
 	r90
@@ -116,19 +116,20 @@ To increase compatibility you can use Unicode version of the library. To set Uni
 
 	//= require material_icons_unicode
 
-Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icon.rb` and set this content:
+(**NOTE** Changes for helpers is only needed for 1.0.0rc1 version) Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icon.rb` and set this content:
 	
 	# Initialize material icons setup
 	MaterialIcons.setup do |config|
 	  config.unicode = true
 	end
 
+The [Helpers](#helpers) has the same syntax.
+
 Now, the text inside of HTML tag is the CSS class! 
 
 	<i class="material-icons face"></i>
 	<i class="material-icons md-36 face"></i>
 
-The [Helpers](#helpers) has the same syntax.
 
 This version increase the size of the CSS file too. To see the difference, these are the size for uncompressed CSS files:
 
