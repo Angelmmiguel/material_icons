@@ -127,9 +127,8 @@ The [Helpers](#helpers) has the same syntax.
 
 Now, the text inside of HTML tag is the CSS class! 
 
-	<i class="material-icons face"></i>
-	<i class="material-icons md-36 face"></i>
-
+	<i class="material-icons mi-face"></i>
+	<i class="mi md-36 mi-face"></i>
 
 This version increase the size of the CSS file too. To see the difference, these are the size for uncompressed CSS files:
 

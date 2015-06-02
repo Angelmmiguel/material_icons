@@ -23,8 +23,8 @@ namespace :material_icons do
         # Need this strange indentation for CSS...
         css =
 <<-FOO
-.material-icons.#{css_class}:before,
-.mi.#{css_class}:before {
+.material-icons.mi-#{css_class}:before,
+.mi.mi-#{css_class}:before {
   content: '\\#{unicode}';
 }
 FOO
