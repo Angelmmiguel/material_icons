@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.0rc1] (Prerelease)
+## [1.0.0rc1] Prerelease
 
 - Added an initializer to set the mode of material icons: unicode or ligatures
 - Added a helper to build icons on views
