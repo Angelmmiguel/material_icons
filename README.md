@@ -2,7 +2,7 @@
 
 ![Material Icons for Rails](https://raw.githubusercontent.com/Angelmmiguel/material_icons/master/material.png)
 
-# Material Icons
+# Material Icons for Rails
 
 [Google Material Icons](https://google.github.io/material-design-icons/) is a +750 set of icons based on Material Design guidelines. With this gem you can add it easily to your Rails projects.
 
@@ -134,6 +134,10 @@ This version increase the size of the CSS file too. To see the difference, these
 
 	material_icons.css.erb            3  KB
 	material_icons_unicode.css.erb    68 KB
+
+# They are using Material icons for Rails :)
+
+* [Materialup.com](http://www.materialup.com): a big community to share, discover and learn about Material Design. 
 
 # License
 
