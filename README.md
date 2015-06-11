@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons)
+[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://travis-ci.org/Angelmmiguel/material_icons.svg?branch=master)](https://travis-ci.org/Angelmmiguel/material_icons)
 
 ![Material Icons for Rails](https://raw.githubusercontent.com/Angelmmiguel/material_icons/master/material.png)
 
