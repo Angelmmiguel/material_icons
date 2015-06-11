@@ -1,6 +1,14 @@
 # Builded gems
 *.gem
 
+# Gemfile
+Gemfile.lock
+
 # Codeopints file (See Rakefile)
 codepoints
 unicode.css
+
+# Dummy test app
+spec/dummy/log
+spec/dummy/tmp
+spec/dummy/db

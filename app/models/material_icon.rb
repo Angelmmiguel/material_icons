@@ -34,7 +34,7 @@ class MaterialIcon
   #
   %w(md_18 md_24 md_36 md_48).each do |size|
     define_method(size) do
-      @size = size.gsub('_', '-')
+      @size = "#{size.gsub('_', '-')} "
       self
     end
   end
@@ -108,12 +108,12 @@ class MaterialIcon
       content_tag(:i, '',
                   @html.merge(
                     style: @style,
-                    class: "mi #{@size} #{@rotation} #{@icon} #{@css_class}"))
+                    class: "mi #{@icon} #{@size}#{@rotation}#{@css_class}"))
     else
       content_tag(:i, "#{@icon}",
                   @html.merge(
                     style: @style,
-                    class: "mi #{@size} #{@rotation} #{@css_class}"))
+                    class: "mi #{@size}#{@rotation}#{@css_class}"))
     end
   end
 end
