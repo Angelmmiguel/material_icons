@@ -1,7 +1,7 @@
 # Base configuration for RSPEC
 ENV['RAILS_ENV'] ||= 'test'
-require 'spec_helper'
 require File.expand_path('../dummy/config/environment.rb', __FILE__)
+require 'capybara/rspec'
 require 'rspec/rails'
 require 'rails/test_help'
 

@@ -15,6 +15,11 @@ describe MaterialIcons::MaterialIconHelper do
       MaterialIcons.unicode = true
     end
 
+    after :all do
+      # Return unicode to false
+      MaterialIcons.unicode = false
+    end
+
     it 'generate the HTML code for an icon' do
       expect(mi.face.r90.to_s).to eq '<i class="mi face r90"></i>'
     end
