@@ -18,13 +18,15 @@ namespace :material_icons do
       # Load from codepoints 
       File.readlines('codepoints').each do |line|
         el = line.split(' ')
-        css_class = el.first.gsub('_', '-')
+        css_class = el.first
+        # Fix for icons that start with number
+        css_class = 'three_d_rotation' if css_class == '3d_rotation'
         unicode = el.last
         # Need this strange indentation for CSS...
         css =
 <<-FOO
-.material-icons.mi-#{css_class}:before,
-.mi.mi-#{css_class}:before {
+.material-icons.#{css_class}:before,
+.mi.#{css_class}:before {
   content: '\\#{unicode}';
 }
 FOO

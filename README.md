@@ -58,10 +58,6 @@ An example of icon is:
 
 ## Helpers
 
-**NOTE** This feature is added to a release candidate version, so you need to specify the version at Gemfile:
-	
-	gem 'material_icons', '~> 1.0.0rc1'
-
 Material Icons provide two helpers to build the HTML code of icons. The methods are `material_icon` and `mi`. These helpers use cascade style to set the icon and options. Using same example:
 
 	<%= material_icon.face %>
@@ -69,6 +65,11 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 
 	<%= material_icon.face.md_36 %>
 	# <i class="material-icons md-36">face</i>
+
+	# This is a special case because the icon name starts with a number. Only
+	# 3d_rotation has this trouble.
+	<%= material_icon.three_d_rotation.md_36 %>
+	# <i class="material-icons md-36">3d_rotation</i>
 
 	# Rotation and custom css class
 	<%= mi.face.r90.css_class('my_class') %>
@@ -116,7 +117,7 @@ To increase compatibility you can use Unicode version of the library. To set Uni
 
 	//= require material_icons_unicode
 
-(**NOTE** Changes for helpers is only needed for 1.0.0rc1 version) Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icon.rb` and set this content:
+Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icon.rb` and set this content:
 	
 	# Initialize material icons setup
 	MaterialIcons.setup do |config|
@@ -125,10 +126,12 @@ To increase compatibility you can use Unicode version of the library. To set Uni
 
 The [Helpers](#helpers) has the same syntax.
 
-Now, the text inside of HTML tag is the CSS class! 
+Now, the text inside of HTML tag is the CSS class! CSS Icon classes use underscores.
 
-	<i class="material-icons mi-face"></i>
-	<i class="mi md-36 mi-face"></i>
+	<i class="material-icons face"></i>
+	<i class="mi md-36 face"></i>
+	<i class="mi add_box"></i>
+	<i class="mi three_d_rotation"></i>
 
 This version increase the size of the CSS file too. To see the difference, these are the size for uncompressed CSS files:
 
@@ -143,4 +146,4 @@ This version increase the size of the CSS file too. To see the difference, these
 
 Google Material Icons are under [Creative Common Attribution 4.0 International License (CC-BY 4.0)](http://creativecommons.org/licenses/by/4.0/). But attribution [is not required](https://github.com/google/material-design-icons#license).
 
-Material Icons gem isgs released under the MIT license.
+Material Icons gem is released under the MIT license. Copyright [@Laux_es ;)](https://twitter.com/Laux_es)

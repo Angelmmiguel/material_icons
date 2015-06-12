@@ -11,6 +11,7 @@ describe 'home/index.html.erb' do
       # Check if the icons exist
       expect(rendered).to have_selector('i.mi.r90', text: 'face')
       expect(rendered).to have_selector('i.mi.r90.md-24', text: 'face')
+      expect(rendered).to have_selector('i.mi', text: '3d_rotation')
     end
   end
 
@@ -30,6 +31,7 @@ describe 'home/index.html.erb' do
       # Check if the icons exist
       expect(rendered).to have_selector('i.mi.r90.face', text: '')
       expect(rendered).to have_selector('i.mi.r90.md-24.face', text: '')
+      expect(rendered).to have_selector('i.mi.three_d_rotation', text: '')
     end
   end
 end

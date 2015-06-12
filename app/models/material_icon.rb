@@ -7,7 +7,7 @@ class MaterialIcon
 
   # Undefined method will ref to the icon.
   def method_missing(name)
-    @icon = name
+    @icon = clear_icon(name)
     self
   end
 
@@ -115,5 +115,24 @@ class MaterialIcon
                     style: @style,
                     class: "mi#{@size}#{@rotation}#{@css_class}"))
     end
+  end
+
+  private
+
+  #
+  # Convert icon names that start with a number to the correct format. On
+  # Material Design Icons version 2.0.0, unique conflict is the 3d-rotation
+  # icon
+  #
+  # == Parameters:
+  # icon:
+  #   String with the name of the icon
+  #
+  # == Returns:
+  # An string with filtered name of the icon
+  #
+  def clear_icon(icon)
+    return icon if unicode? || icon != :three_d_rotation
+    '3d_rotation'
   end
 end
