@@ -15,7 +15,7 @@ class MaterialIcon
   # Reset will set all variables to nil
   #
   def reset
-    @icon, @rotation, @size, @html, @style = [nil] * 5
+    @icon, @rotation, @size, @html, @style, @css_class = [nil] * 6
     self
   end
 
@@ -24,7 +24,7 @@ class MaterialIcon
   #
   %w(r90 r180 r270 flip_horizontal flip_vertical).each do |rotation|
     define_method(rotation) do
-      @rotation = rotation.gsub('_', '-')
+      @rotation = " #{rotation.gsub('_', '-')}"
       self
     end
   end
@@ -34,7 +34,7 @@ class MaterialIcon
   #
   %w(md_18 md_24 md_36 md_48).each do |size|
     define_method(size) do
-      @size = "#{size.gsub('_', '-')} "
+      @size = " #{size.gsub('_', '-')} "
       self
     end
   end
@@ -50,7 +50,7 @@ class MaterialIcon
   # MaterialIcon instance
   #
   def css_class(css_class = '')
-    @css_class = css_class
+    @css_class = " #{css_class}"
     self
   end
   
@@ -108,12 +108,12 @@ class MaterialIcon
       content_tag(:i, '',
                   @html.merge(
                     style: @style,
-                    class: "mi #{@icon} #{@size}#{@rotation}#{@css_class}"))
+                    class: "mi #{@icon}#{@size}#{@rotation}#{@css_class}"))
     else
       content_tag(:i, "#{@icon}",
                   @html.merge(
                     style: @style,
-                    class: "mi #{@size}#{@rotation}#{@css_class}"))
+                    class: "mi#{@size}#{@rotation}#{@css_class}"))
     end
   end
 end
