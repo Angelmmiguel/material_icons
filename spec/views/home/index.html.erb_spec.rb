@@ -9,9 +9,9 @@ describe 'home/index.html.erb' do
     it 'render the icons with the helper' do
       render
       # Check if the icons exist
-      expect(rendered).to have_selector('i.mi.r90', text: 'face')
-      expect(rendered).to have_selector('i.mi.r90.md-24', text: 'face')
-      expect(rendered).to have_selector('i.mi', text: '3d_rotation')
+      expect(rendered).to have_selector('i.material-icons.r90', text: 'face')
+      expect(rendered).to have_selector('i.material-icons.r90.md-24', text: 'face')
+      expect(rendered).to have_selector('i.material-icons', text: '3d_rotation')
     end
   end
 
@@ -29,9 +29,9 @@ describe 'home/index.html.erb' do
     it 'render the icons with the helper' do
       render
       # Check if the icons exist
-      expect(rendered).to have_selector('i.mi.r90.face', text: '')
-      expect(rendered).to have_selector('i.mi.r90.md-24.face', text: '')
-      expect(rendered).to have_selector('i.mi.three_d_rotation', text: '')
+      expect(rendered).to have_selector('i.material-icons.r90.face', text: '')
+      expect(rendered).to have_selector('i.material-icons.r90.md-24.face', text: '')
+      expect(rendered).to have_selector('i.material-icons.three_d_rotation', text: '')
     end
   end
 end
