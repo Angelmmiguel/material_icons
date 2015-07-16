@@ -53,7 +53,7 @@ class MaterialIcon
     @css_class = " #{css_class}"
     self
   end
-  
+
   #
   # Add CSS properties to :i tag
   #
@@ -108,12 +108,12 @@ class MaterialIcon
       content_tag(:i, '',
                   @html.merge(
                     style: @style,
-                    class: "mi #{@icon}#{@size}#{@rotation}#{@css_class}"))
+                    class: "material-icons #{@icon}#{@size}#{@rotation}#{@css_class}"))
     else
       content_tag(:i, "#{@icon}",
                   @html.merge(
                     style: @style,
-                    class: "mi#{@size}#{@rotation}#{@css_class}"))
+                    class: "material-icons#{@size}#{@rotation}#{@css_class}"))
     end
   end
 
