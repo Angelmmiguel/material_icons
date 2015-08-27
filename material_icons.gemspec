@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   # Dependencies for testing
   s.add_development_dependency "sqlite3", ">= 1.3"
   s.add_development_dependency "rspec", ">= 3.2"
-  s.add_development_dependency "rspec-rails" , ">= 3.2"
+  s.add_development_dependency "rspec-rails" , ">= 3.0"
   s.add_development_dependency "capybara", ">= 2.4.4"
   s.add_development_dependency "coveralls", ">= 0.8.2"
 end
