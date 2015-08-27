@@ -3,4 +3,16 @@ rvm:
   - 2.2.2
   - 2.1.2
   - 1.9.3
+  - jruby-18mode
+  - jruby-19mode
+env:
+  - "RAILS_VERSION=3.1.0"
+  - "RAILS_VERSION=3.2.0"
+  - "RAILS_VERSION=4.0.0"
+  - "RAILS_VERSION=4.1.0"
+  - "RAILS_VERSION=default"
+  - "RAILS_VERSION=master"
+matrix:
+  allow_failures:
+    - env: "RAILS_VERSION=master"
 script: bundle exec rspec
