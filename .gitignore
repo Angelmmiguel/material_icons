@@ -11,4 +11,4 @@ unicode.css
 # Dummy test app
 spec/dummy/log
 spec/dummy/tmp
-spec/dummy/db
+spec/dummy/db/*.sqlite3
