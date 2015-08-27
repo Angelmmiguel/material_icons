@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Angel M Miguel"]
   s.email       = 'angel@laux.es'
   s.files       = Dir["{app,lib}/**/*"] + %w(Rakefile LICENSE README.md)
-  s.homepage    = 'https://laux.es'
+  s.homepage    = 'http://irb.rocks'
   s.require_paths = ['lib']
   s.licenses     = ['MIT', 'Creative Common Attribution 4.0 International License']
   # Dependencies for testing
