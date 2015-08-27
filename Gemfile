@@ -12,3 +12,4 @@ rails = case rails_version
         end
 
 gem "rails", rails
+gem 'test-unit'
