@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Prerelease]
+
+- Moved LICENSE of fonts to root.
+- Added tests to several versions of Rails gem.
+
 ## [1.0.0] 12-06-2015
 
 - Change the CSS classes of unicode mode. Now this classes use underscores: add_box, account_circle...

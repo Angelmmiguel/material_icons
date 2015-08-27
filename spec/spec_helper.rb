@@ -5,7 +5,6 @@ Coveralls.wear!
 require File.expand_path('../dummy/config/environment.rb', __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
-require 'rails/test_help'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

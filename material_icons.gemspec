@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "Add Google Material Icons in your Rails projects easily. It is a library with +750 icons ;)"
   s.authors     = ["Angel M Miguel"]
   s.email       = 'angel@laux.es'
-  s.files       = Dir["{app,lib}/**/*"] + %w(Rakefile LICENSE README.md)
+  s.files       = Dir["{app,lib}/**/*"] + %w(Rakefile LICENSE README.md LICENSE_OF_FONTS)
   s.homepage    = 'http://irb.rocks'
   s.require_paths = ['lib']
   s.licenses     = ['MIT', 'Creative Common Attribution 4.0 International License']

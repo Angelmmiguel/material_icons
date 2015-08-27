@@ -1,6 +1,9 @@
 # Builded gems
 *.gem
 
+# Reports
+/coverage
+
 # Gemfile
 Gemfile.lock
 

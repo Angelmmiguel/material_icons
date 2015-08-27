@@ -18,18 +18,6 @@ Dummy::Application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
-
-  # Raise exceptions instead of rendering exception templates.
-  config.action_dispatch.show_exceptions = false
-
-  # Disable request forgery protection in test environment.
-  config.action_controller.allow_forgery_protection = false
-
-  # Tell Action Mailer not to deliver emails to the real world.
-  # The :test delivery method accumulates sent emails in the
-  # ActionMailer::Base.deliveries array.
-  config.action_mailer.delivery_method = :test
 
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
@@ -46,6 +34,7 @@ Dummy::Application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
 
+  # For old versions of rails
   config.secret_token = 'hjksfkhjdaheuifkj23hkjdaDSDFAJSDFHleuiwfkdj23iurkejlfdbsfASDFiorjkhefd'
 
   # Raises error for missing translations
