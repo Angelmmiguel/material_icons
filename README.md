@@ -138,6 +138,24 @@ This version increase the size of the CSS file too. To see the difference, these
 	material_icons.css.erb            3  KB
 	material_icons_unicode.css.erb    68 KB
 
+# Tested on
+
+Tested with [Travis CI](https://travis-ci.org/Angelmmiguel/material_icons).
+
+Ruby versions:
+
+* 2.2.2
+* 2.1.2
+* 1.9.3
+
+Rails versions:
+
+* 3.2
+* 4.0
+* 4.1
+* 4.2
+* master
+
 # They are using Material icons for Rails :)
 
 * [Materialup.com](http://www.materialup.com): a big community to share, discover and learn about Material Design. 

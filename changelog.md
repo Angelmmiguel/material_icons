@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Prerelease]
+## [1.0.1] 28-08-2015
 
 - Moved LICENSE of fonts to root.
 - Added tests to several versions of Rails gem.
