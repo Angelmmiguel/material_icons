@@ -3,9 +3,14 @@ rvm:
   - 2.2.2
   - 2.1.2
   - 1.9.3
-env:
-  - "RAILS_VERSION=3.2.0"
-  - "RAILS_VERSION=4.0.0"
-  - "RAILS_VERSION=4.1.0"
-  - "RAILS_VERSION=default"
+gemfile:
+  - Gemfile
+  - gemfiles/rails_3_2.gemfile
+  - gemfiles/rails_4_0.gemfile
+  - gemfiles/rails_4_1.gemfile
+  - gemfiles/rails_4_2.gemfile
+  - gemfiles/rails_master.gemfile
+matrix:
+  allow_failures:
+    - gemfile: gemfiles/rails_master.gemfile
 script: bundle exec rspec
