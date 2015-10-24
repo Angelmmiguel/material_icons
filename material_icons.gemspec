@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.licenses     = ['MIT', 'Creative Common Attribution 4.0 International License']
 
   # Basic dependency
-  s.add_dependency 'railties', '>= 3.2', '<= 4.2'
+  s.add_dependency 'railties', '>= 3.2'
 
   # Dependencies for testing
   s.add_development_dependency 'rails', '~> 4.2'
