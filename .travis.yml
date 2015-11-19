@@ -12,4 +12,5 @@ gemfile:
 matrix:
   allow_failures:
     - gemfile: gemfiles/rails_master.gemfile
+install: bundle install
 script: bundle exec rspec
