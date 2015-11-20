@@ -8,7 +8,7 @@
 
 ## Google Material Icons v2.1
 
-Google updates Material Icons to version 2.1. It's include +90 new icons!
+Google updates Material Icons to version 2.1. It's include 96 new icons!
 
 # Installation
 
