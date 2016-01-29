@@ -64,8 +64,14 @@ class MaterialIcon
   # == Returns:
   # MaterialIcon instance
   #
-  def style(style = '')
-    @style = style
+  def style(css_style = '')
+    if css_style && css_style.empty?
+      # It references style icon
+      @icon = clear_icon('style')
+    else
+      # User wants to apply a style to the icon
+      @style = css_style
+    end
     self
   end
 
