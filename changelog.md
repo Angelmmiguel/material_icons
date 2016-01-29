@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.1] 29-01-2016
+
+- Fixed a conflict with style icon name and MaterialIcon style method [#8](https://github.com/Angelmmiguel/material_icons/issues/8)
+
 ## [2.0.0] 20-11-2015
 
 - Update Material Design icon font to 2.1 version (Thanks [@matthieua](https://github.com/matthieua))
