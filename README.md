@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://travis-ci.org/Angelmmiguel/material_icons.svg?branch=master)](https://travis-ci.org/Angelmmiguel/material_icons) [![Code Climate](https://codeclimate.com/github/Angelmmiguel/material_icons/badges/gpa.svg)](https://codeclimate.com/github/Angelmmiguel/material_icons) [![Coverage Status](https://coveralls.io/repos/Angelmmiguel/material_icons/badge.svg?branch=master&service=github)](https://coveralls.io/github/Angelmmiguel/material_icons?branch=master)
+[![Gem Version](https://badge.fury.io/rb/material_icons@2x.png)](https://badge.fury.io/rb/material_icons) [![Build Status](https://travis-ci.org/Angelmmiguel/material_icons.svg?branch=master)](https://travis-ci.org/Angelmmiguel/material_icons) [![Code Climate](https://codeclimate.com/github/Angelmmiguel/material_icons/badges/gpa.svg)](https://codeclimate.com/github/Angelmmiguel/material_icons) [![Coverage Status](https://coveralls.io/repos/Angelmmiguel/material_icons/badge.svg?branch=master&service=github)](https://coveralls.io/github/Angelmmiguel/material_icons?branch=master)
 
 ![Material Icons for Rails](https://raw.githubusercontent.com/Angelmmiguel/material_icons/master/material.png)
 
@@ -56,7 +56,7 @@ Don't forget to see material_icons.css.erb ;).
 Google Material Icons uses a feature called ligatures. We can define the icon in the text of the HTML tag. Go to [Google Guide](https://google.github.io/material-design-icons/#using-the-icons-in-html) to get more info.
 
 An example of icon is:
-	
+
 	<i class="material-icons">face</i>
 	<i class="material-icons md-36">face</i>
 
@@ -80,7 +80,7 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 	# <i class="material-icons r90 my_class">face</i>
 
 Allowed methods are:
-	
+
 	# Rotation methods
 	r90
 	r180
@@ -107,7 +107,7 @@ Remember this is a helper, you always can use HTML syntax ;).
 
 # Compatibility
 
-Ligature feature requires a supported browser: 
+Ligature feature requires a supported browser:
 
 	Google Chrome       >= 11
 	Mozilla Firefox     >= 3.5
@@ -122,7 +122,7 @@ To increase compatibility you can use Unicode version of the library. To set Uni
 	//= require material_icons_unicode
 
 Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icon.rb` and set this content:
-	
+
 	# Initialize material icons setup
 	MaterialIcons.setup do |config|
 	  config.unicode = true
@@ -162,7 +162,7 @@ Rails versions:
 
 # They are using Material icons for Rails :)
 
-* [Materialup.com](http://www.materialup.com): a big community to share, discover and learn about Material Design. 
+* [Materialup.com](http://www.materialup.com): a big community to share, discover and learn about Material Design.
 
 # License
 
