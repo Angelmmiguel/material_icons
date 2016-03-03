@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://travis-ci.org/Angelmmiguel/material_icons.svg?branch=master)](https://travis-ci.org/Angelmmiguel/material_icons) [![Code Climate](https://codeclimate.com/github/Angelmmiguel/material_icons/badges/gpa.svg)](https://codeclimate.com/github/Angelmmiguel/material_icons) [![Dependency Status](https://gemnasium.com/Angelmmiguel/material_icons.svg)](https://gemnasium.com/Angelmmiguel/material_icons) [![Coverage Status](https://coveralls.io/repos/Angelmmiguel/material_icons/badge.svg?branch=master&service=github)](https://coveralls.io/github/Angelmmiguel/material_icons?branch=master)
+[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://travis-ci.org/Angelmmiguel/material_icons.svg?branch=master)](https://travis-ci.org/Angelmmiguel/material_icons) [![Code Climate](https://codeclimate.com/github/Angelmmiguel/material_icons/badges/gpa.svg)](https://codeclimate.com/github/Angelmmiguel/material_icons) [![Coverage Status](https://coveralls.io/repos/Angelmmiguel/material_icons/badge.svg?branch=master&service=github)](https://coveralls.io/github/Angelmmiguel/material_icons?branch=master)
 
 ![Material Icons for Rails](https://raw.githubusercontent.com/Angelmmiguel/material_icons/master/material.png)
 
@@ -107,7 +107,7 @@ Remember this is a helper, you always can use HTML syntax ;).
 
 # Slim templating engine
 
-If you are using [Slim templating engine](http://slim-lang.com/) in your Rails application, use double equal `==` method to render icons or the content won't be marked as HTML safe. We are working on this issue, because we use `content_tag` that set the text as HTML safe (see [ActionView::Helpers::TagHelper line 146](https://github.com/rails/rails/blob/4-2-stable/actionview/lib/action_view/helpers/tag_helper.rb#L146)).
+If you are using [Slim templating engine](http://slim-lang.com/) in your Rails application, use double equal `==` method to render icons or the content won't be marked as HTML safe. We are working on this issue, because we use `content_tag` and it sets the text as HTML safe (see [ActionView::Helpers::TagHelper line 146](https://github.com/rails/rails/blob/4-2-stable/actionview/lib/action_view/helpers/tag_helper.rb#L146)).
 
 ```
 p.text
