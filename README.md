@@ -105,6 +105,17 @@ Allowed methods are:
 
 Remember this is a helper, you always can use HTML syntax ;).
 
+# Slim templating engine
+
+If you are using [Slim templating engine](http://slim-lang.com/) in your Rails application, use double equal `==` method to render icons or the content won't be marked as HTML safe. We are working on this issue, because we use `content_tag` that set the text as HTML safe (see [ActionView::Helpers::TagHelper line 146](https://github.com/rails/rails/blob/4-2-stable/actionview/lib/action_view/helpers/tag_helper.rb#L146)).
+
+```
+p.text
+  == material_icon.search.md_18
+```
+
+Reference [#9](https://github.com/Angelmmiguel/material_icons/issues/9)
+
 # Compatibility
 
 Ligature feature requires a supported browser:
