@@ -22,9 +22,9 @@ Then, execute `bundle install`.
 
 In your `application.css.erb` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
 
-Add this line at top of `application.css.erb` to use ligature:
+Add this line at top of `application.css` to use ligature:
 
-	//= require material_icons
+	*= require material_icons
 
 These files provide multiple CSS classes to use in your views. Main classes are:
 
