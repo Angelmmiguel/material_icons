@@ -30,7 +30,7 @@ Add this line at top of `application.css` to use ligature:
 */
 ```
 
-**NOTE**: Depending on the comment style of `application.css`, you need to add `//= require material_icons` instead of before line. See [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives) for more info.
+**NOTE**: Depending on the comment style of `application.css`, you may need to add `//= require material_icons` instead of the previous. See [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives) for more info.
 
 These files provide multiple CSS classes to use in your views. Main classes are:
 
@@ -152,7 +152,7 @@ To increase compatibility you can use Unicode version of the library. To set Uni
 */
 ```
 
-**NOTE**: Depending on the comment style of `application.css`, you need to add `//= require material_icons_unicode` instead of before line. See [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives) for more info.
+**NOTE**: Depending on the comment style of `application.css`, you may need to add `//= require material_icons_unicode` instead of the previous. See [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives) for more info.
 
 Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icons.rb` and set this content:
 
