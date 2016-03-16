@@ -20,7 +20,7 @@ Then, execute `bundle install`.
 
 # CSS
 
-In your `application.css` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
+In your `app/assets/stylesheets/application.css` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
 
 Add this line at top of `application.css` to use ligature:
 
@@ -144,7 +144,7 @@ Opera | >= 15
 Apple MobileSafari | >= iOS 4.2
 Android Browser | >= 3.0     
 
-To increase compatibility you can use Unicode version of the library. To set Unicode icons, you need to change the line to load ligature CSS file on `application.css` ~> `//= require material_icons` to this line:
+To increase compatibility you can use Unicode version of the library. To set Unicode icons, you need to change the line to load ligature CSS file on `app/assets/stylesheets/application.css` (`*= require material_icons`) to this line:
 
 ```css
 /*
