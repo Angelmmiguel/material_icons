@@ -4,11 +4,11 @@
 
 # Material Icons for Rails
 
-[Google Material Icons](https://google.github.io/material-design-icons/) is a +750 set of icons based on Material Design guidelines. With this gem you can add it easily to your Rails projects.
+[Google Material Icons](https://google.github.io/material-design-icons/) is a +900 set of icons based on Material Design guidelines. With this gem you can add it easily to your Rails projects.
 
-## Google Material Icons v2.1
+## Google Material Icons v2.2
 
-Google updates Material Icons to version 2.1. It's include 96 new icons!
+Google updates Material Icons to version 2.2. It's include 41 new icons!
 
 # Installation
 
