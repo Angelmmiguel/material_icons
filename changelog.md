@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## Prerelease
+## [2.2.0] 18-03-2016
 
 - Update Material Design icon font to 2.2.2 version [#12](https://github.com/Angelmmiguel/material_icons/issues/12)
 
