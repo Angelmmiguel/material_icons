@@ -205,6 +205,6 @@ Rails versions:
 
 # License
 
-Google Material Icons are under [Creative Common Attribution 4.0 International License (CC-BY 4.0)](http://creativecommons.org/licenses/by/4.0/). But attribution [is not required](https://github.com/google/material-design-icons#license).
+Google Material Icons are under [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). _We'd love attribution in your app's about screen, but [it's not required](https://github.com/google/material-design-icons#license)_.
 
 Material Icons gem is released under the MIT license. Copyright [@Laux_es ;)](https://twitter.com/Laux_es)
