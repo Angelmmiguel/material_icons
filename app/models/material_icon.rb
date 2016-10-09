@@ -75,6 +75,32 @@ class MaterialIcon
     self
   end
 
+  # Create an alias to use the original method
+  alias_method :super_send, :send
+
+  #
+  # Override send functionality to set the name of the icon to "send" when
+  # the method doesn't receive any parameters
+  #
+  # == Paremeters:
+  # name::
+  #    Name of the method to call
+  # args::
+  #    Arguments to send the method
+  #
+  # == Returns:
+  # MaterialIcon instance or the result of the method call
+  #
+  def send(name = '', *args)
+    if name && name.empty?
+      @icon = clear_icon('send')
+      # Return self
+      self
+    else
+      super_send(name.to_sym, *args)
+    end
+  end
+
   #
   # Add HTML options to :i tag.
   #
