@@ -187,9 +187,9 @@ Tested with [Travis CI](https://travis-ci.org/Angelmmiguel/material_icons).
 
 Ruby versions:
 
+* 2.3.1
 * 2.2.2
 * 2.1.2
-* 1.9.3
 
 Rails versions:
 
