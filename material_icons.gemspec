@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'railties', '>= 3.2'
 
   # Dependencies for testing
-  s.add_development_dependency 'rails', '~> 4.2'
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'rspec', '~> 3.2'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
