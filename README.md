@@ -202,7 +202,8 @@ Rails versions:
 # They are using Material icons for Rails :)
 
 * [Materialup.com](http://www.materialup.com): a big community to share, discover and learn about Material Design.
-* [Easy Bills](https://www.easybills.io): a free tool to manage your finances
+* [Easy Bills](https://www.easybills.io): a free tool to manage your finances.
+* [Notebook.ai](https://www.notebook.ai/): your digital notebook is here. Notebook.ai grows with your ideas and collaborates back with you.
 
 # License
 
