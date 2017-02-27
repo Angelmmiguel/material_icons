@@ -2,10 +2,10 @@ require 'spec_helper'
 
 # Test for main class
 describe MaterialIcon do
-  describe "Icons with existing methods" do
+  describe 'Icons with existing methods' do
     # Style icon
-    describe "Style" do
-      it "should set the icon name when the method has no params" do
+    describe '#Style' do
+      it 'should set the icon name when the method has no params' do
         mi = MaterialIcon.new
         # Set the icon and style
         res = mi.style
@@ -14,7 +14,7 @@ describe MaterialIcon do
         expect(res.class).to eq MaterialIcon
       end
 
-      it "should call style when the method has params" do
+      it 'should call style when the method has params' do
         mi = MaterialIcon.new
         css_style = 'margin-top: 10px;'
         # Set the icon and style
@@ -25,8 +25,8 @@ describe MaterialIcon do
     end
 
     # Send icon
-    describe "Send" do
-      it "should set the icon name when the method has no params" do
+    describe '#send' do
+      it 'should set the icon name when the method has no params' do
         mi = MaterialIcon.new
         # Set the icon and style
         res = mi.send
@@ -35,7 +35,7 @@ describe MaterialIcon do
         expect(res.class).to eq MaterialIcon
       end
 
-      it "should call to send when the method has params" do
+      it 'should call to send when the method has params' do
         mi = MaterialIcon.new
         css_style = 'margin-top: 10px;'
         # Set the icon and style
@@ -44,7 +44,7 @@ describe MaterialIcon do
         expect(mi.instance_variable_get('@style')).to eq css_style
       end
 
-      it "should return the correct response" do
+      it 'should return the correct response' do
         mi = MaterialIcon.new
         # Send with name and arguments
         res = mi.send :equal?, mi
@@ -55,6 +55,23 @@ describe MaterialIcon do
         # Only send
         res3 = mi.send
         expect(res3.class).to eq MaterialIcon
+      end
+    end
+
+    # Array join must be executed without any bug
+    describe '#to_str' do
+
+      it 'should call to_s instead of executing method_missing' do
+        mi = MaterialIcon.new
+        res = mi.face.to_str
+        expect(res).to eq mi.to_s
+      end
+
+      it 'the class should works when we use Array.join' do
+        mi = MaterialIcon.new
+        mi2 = MaterialIcon.new
+        expect([mi.face].join).to eq mi.to_s
+        expect([mi.face, mi2.send].join).to eq "#{mi}#{mi2}"
       end
     end
   end

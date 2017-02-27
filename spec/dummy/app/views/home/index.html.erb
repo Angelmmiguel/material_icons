@@ -5,3 +5,6 @@
 <%= material_icon.face.r90.md_24 %>
 <%# Special case %>
 <%= mi.three_d_rotation %>
+
+<%# Safe join! %>
+<%= safe_join([mi.send.to_s, mi.book.to_s]) %>
