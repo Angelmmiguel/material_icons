@@ -149,6 +149,21 @@ class MaterialIcon
     end
   end
 
+  # Fix #13. Some Rails methods uses to_str instead of to_s. In this case, to_str is handled
+  # by method_missing so it's returning the same instance and the method are failing
+  alias_method :to_str, :to_s
+
+  #
+  # Some methods require to_ary to be defined. We return nil in this method to avoid this class
+  # to be threated as an Array
+  #
+  # == Returns
+  # Nil
+  #
+  def to_ary
+    nil
+  end
+
   private
 
   #
