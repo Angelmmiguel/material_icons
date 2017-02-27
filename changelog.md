@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.1] 27-02-2017
+
+- Drop support for Ruby 1.9.3. Some gems require Ruby > 2 [#17](https://github.com/Angelmmiguel/material_icons/issues/17)
+- Add to_str and to_ary methods to fix avoid errors with Array methods [#13](https://github.com/Angelmmiguel/material_icons/issues/13)
+
 ## [2.2.0] 18-03-2016
 
 - Update Material Design icon font to 2.2.2 version [#12](https://github.com/Angelmmiguel/material_icons/issues/12)
