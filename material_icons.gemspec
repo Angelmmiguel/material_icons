@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.files       = Dir['{app,lib}/**/*'] + %w(Rakefile LICENSE README.md LICENSE_OF_FONTS)
   s.homepage    = 'http://irb.rocks'
   s.require_paths = ['lib']
-  s.licenses     = ['MIT', 'Creative Common Attribution 4.0 International License']
+  s.licenses     = ['MIT', 'Apache-2.0']
 
   # Basic dependency
   s.add_dependency 'railties', '>= 3.2'
