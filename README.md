@@ -28,7 +28,7 @@ Then, execute `bundle install`.
 
 # CSS
 
-In your `app/assets/stylesheets/application.css` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
+In your `app/assets/stylesheets/application.css.erb` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
 
 Add this line at top of `application.css` to use ligature:
 
@@ -127,17 +127,6 @@ html({ data: { id: 1 } })
 
 Remember this is a helper, you always can use HTML syntax ;).
 
-# Slim templating engine
-
-If you are using [Slim templating engine](http://slim-lang.com/) in your Rails application, use double equal `==` method to render icons or the content won't be marked as HTML safe. We are working on this issue, because we use `content_tag` and it sets the text as HTML safe (see [ActionView::Helpers::TagHelper line 146](https://github.com/rails/rails/blob/4-2-stable/actionview/lib/action_view/helpers/tag_helper.rb#L146)).
-
-```
-p.text
-  == material_icon.search.md_18
-```
-
-Reference [#9](https://github.com/Angelmmiguel/material_icons/issues/9)
-
 # Compatibility
 
 Ligature feature requires a supported browser:
@@ -188,6 +177,33 @@ File | Size
 ---- | ----
 material_icons.css.erb | 3  KB
 material_icons_unicode.css.erb | 68 KB
+
+# Common issues
+
+## Slim templating engine
+
+If you are using [Slim templating engine](http://slim-lang.com/) in your Rails application, use double equal `==` method to render icons or the content won't be marked as HTML safe. We are working on this issue, because we use `content_tag` and it sets the text as HTML safe (see [ActionView::Helpers::TagHelper line 146](https://github.com/rails/rails/blob/4-2-stable/actionview/lib/action_view/helpers/tag_helper.rb#L146)).
+
+```
+p.text
+  == material_icon.search.md_18
+```
+
+Reference [#9](https://github.com/Angelmmiguel/material_icons/issues/9)
+
+## Couldn't find file 'material_icons'
+
+```
+couldn't find file 'material_icons' with type 'application/javascript' 
+```
+
+This error is related with the asset compilation of Rails. To fix it, just follow these steps:
+
+* Confirm that you [required the Material Icons CSS in your main CSS file](#CSS)
+* Check and remove any similar line of code from `app/assets/javascripts/application.js.erb`
+* Restart your rails server.
+
+Reference [#10](https://github.com/Angelmmiguel/material_icons/issues/10)
 
 # Tested on
 
