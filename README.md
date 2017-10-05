@@ -8,12 +8,6 @@
 
 **This gem helps you to add this fantastic icon collection to your Rails projects easily**. I keep the gem updated so you always will have the latest icons in your project.
 
-If you want to help me maintain this gem, you can pay me some coffees. I'll add you to the [Donators](#donators) section, so don't forget to add your twitter account to the description of the donation. Thanks :)
-
-<p align="center">
-<a href="https://www.paypal.me/angelmm/5" target="blank"><img src="https://cloud.githubusercontent.com/assets/4056725/23456739/007cacf2-fe75-11e6-9a84-4eb0c578aba3.png" alt="Donate to Material Icons Rails" height="30"></a>
-</p>
-
 ## Google Material Icons v2.2.2
 
 Google updates Material Icons to [v2.2.2](https://github.com/google/material-design-icons/releases/tag/2.2.2). It's include 41 new icons!
@@ -131,15 +125,15 @@ Remember this is a helper, you always can use HTML syntax ;).
 
 Ligature feature requires a supported browser:
 
-Browser | Version    
+Browser | Version
 ---- | ----
-Google Chrome | >= 11        
-Mozilla Firefox | >= 3.5     
-Apple Safari | >= 5       
-Microsoft IE | >= 10      
-Opera | >= 15      
+Google Chrome | >= 11
+Mozilla Firefox | >= 3.5
+Apple Safari | >= 5
+Microsoft IE | >= 10
+Opera | >= 15
 Apple MobileSafari | >= iOS 4.2
-Android Browser | >= 3.0     
+Android Browser | >= 3.0
 
 To increase compatibility you can use Unicode version of the library. To set Unicode icons, you need to change the line to load ligature CSS file on `app/assets/stylesheets/application.css` (`*= require material_icons`) to this line:
 
@@ -229,18 +223,14 @@ Rails versions:
 * [Easy Bills](https://www.easybills.io): a free tool to manage your finances.
 * [Notebook.ai](https://www.notebook.ai/): your digital notebook is here. Notebook.ai grows with your ideas and collaborates back with you.
 
-# Donators
-
-Thank you all for supporting the project! You are awesome :)
-
-* Do you want to be the first donator?
-
-<p align="center">
-<a href="https://www.paypal.me/angelmm/5" target="blank"><img src="https://cloud.githubusercontent.com/assets/4056725/23456739/007cacf2-fe75-11e6-9a84-4eb0c578aba3.png" alt="Donate to Material Icons Rails" height="30"></a>
-</p>
-
 # License
 
 Google Material Icons are under [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). _We'd love attribution in your app's about screen, but [it's not required](https://github.com/google/material-design-icons#license)_.
 
 Material Icons gem is released under the MIT license. Copyright [@Laux_es ;)](https://twitter.com/Laux_es)
+
+# Sponsors
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/Bd3aXba7JBxkLsouBkMJjayn/Angelmmiguel/material_icons'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/Bd3aXba7JBxkLsouBkMJjayn/Angelmmiguel/material_icons.svg' />
+</a>
