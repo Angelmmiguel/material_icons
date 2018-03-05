@@ -205,9 +205,11 @@ Tested with [Travis CI](https://travis-ci.org/Angelmmiguel/material_icons).
 
 Ruby versions:
 
-* 2.3.1
-* 2.2.2
-* 2.1.2
+* 2.5.0
+* 2.4.3
+* 2.3.6
+* 2.2.9
+* 2.1.10
 
 Rails versions:
 
@@ -215,6 +217,7 @@ Rails versions:
 * 4.0
 * 4.1
 * 4.2
+* 5.0
 * master
 
 # They are using Material icons for Rails :)

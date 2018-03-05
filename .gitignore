@@ -15,3 +15,6 @@ unicode.css
 spec/dummy/log
 spec/dummy/tmp
 spec/dummy/db/*.sqlite3
+
+# gemfile.lock
+gemfiles/*.lock
