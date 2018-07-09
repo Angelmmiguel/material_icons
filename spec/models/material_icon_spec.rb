@@ -58,6 +58,29 @@ describe MaterialIcon do
       end
     end
 
+    # Class icon
+    describe '#class_icon' do
+
+      it 'should set the class icon when the method has no params' do
+        mi = MaterialIcon.new
+        # Set the icon and style
+        res = mi.class_icon
+        # Check icon
+        expect(mi.instance_variable_get('@icon')).to eq 'class'
+        expect(res.class).to eq MaterialIcon
+      end
+
+      it 'should set the class icon and style' do
+        mi = MaterialIcon.new
+        css_style = 'margin-top: 10px;'
+        # Set the icon and style
+        mi.class_icon.style css_style
+        # Check icon
+        expect(mi.instance_variable_get('@icon')).to eq 'class'
+        expect(mi.instance_variable_get('@style')).to eq css_style
+      end
+    end
+
     # Array join must be executed without any bug
     describe '#to_str' do
 
