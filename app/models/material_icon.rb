@@ -7,7 +7,12 @@ class MaterialIcon
 
   # Undefined method will ref to the icon.
   def method_missing(name)
-    @icon = clear_icon(name)
+    @icon =
+      if name == :class_icon
+        'class' # Set the icon named 'class'
+      else
+        clear_icon(name)
+      end
     self
   end
 
