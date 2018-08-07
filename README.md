@@ -91,6 +91,10 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 # Rotation and custom css class
 <%= mi.face.r90.css_class('my_class') %>
 # <i class="material-icons r90 my_class">face</i>
+
+# Custom css and data attributes
+<%= mi.face.css_class('my_class').html(data: {id: 1}) %>
+# <i data-id="1" class="material-icons my_class">face</i>
 ```
 
 Allowed methods are:
@@ -188,7 +192,7 @@ Reference [#9](https://github.com/Angelmmiguel/material_icons/issues/9)
 ## Couldn't find file 'material_icons'
 
 ```
-couldn't find file 'material_icons' with type 'application/javascript' 
+couldn't find file 'material_icons' with type 'application/javascript'
 ```
 
 This error is related with the asset compilation of Rails. To fix it, just follow these steps:
