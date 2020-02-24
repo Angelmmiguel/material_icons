@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'coveralls', '~> 0.8.2'
   s.add_development_dependency 'pry', '~> 0.10.3'
   s.add_development_dependency 'pry-nav', '~> 0.2.4'
+  s.add_development_dependency 'sass-rails'
 end
