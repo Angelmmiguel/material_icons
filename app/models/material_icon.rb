@@ -123,15 +123,7 @@ class MaterialIcon
   end
 
   #
-  # Check based on rails config if the selected mode is unicode
-  #
-  def unicode?
-    MaterialIcons.unicode
-  end
-
-  #
-  # Create the HTML code for the icon. This method check if selected mode is
-  # unicode or ligatures.
+  # Create the HTML code for the icon
   #
   # == Returns:
   # Safe string
@@ -141,17 +133,10 @@ class MaterialIcon
     @html = @html.nil? || !@html.is_a?(Hash) ? {} : @html
 
     # Create the icon
-    if unicode?
-      content_tag(:i, '',
-                  @html.merge(
-                    style: @style,
-                    class: "material-icons #{@icon}#{@size}#{@rotation}#{@css_class}"))
-    else
-      content_tag(:i, "#{@icon}",
-                  @html.merge(
-                    style: @style,
-                    class: "material-icons#{@size}#{@rotation}#{@css_class}"))
-    end
+    content_tag(:i, "#{@icon}",
+                @html.merge(
+                  style: @style,
+                  class: "material-icons#{@size}#{@rotation}#{@css_class}"))
   end
 
   # Fix #13. Some Rails methods uses to_str instead of to_s. In this case, to_str is handled
@@ -184,7 +169,7 @@ class MaterialIcon
   # An string with filtered name of the icon
   #
   def clear_icon(icon)
-    return icon if unicode? || icon != :three_d_rotation
+    return icon if icon != :three_d_rotation
     '3d_rotation'
   end
 end
