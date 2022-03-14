@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://github.com/Angelmmiguel/material_icons/workflows/Ruby/badge.svg)](https://github.com/Angelmmiguel/material_icons/actions?query=workflow%3ARuby) [![Coverage Status](https://coveralls.io/repos/github/Angelmmiguel/material_icons/badge.svg?branch=master)](https://coveralls.io/github/Angelmmiguel/material_icons?branch=master)
+[![Gem Version](https://badge.fury.io/rb/material_icons.svg)](http://badge.fury.io/rb/material_icons) [![Build Status](https://github.com/Angelmmiguel/material_icons/workflows/Ruby/badge.svg)](https://github.com/Angelmmiguel/material_icons/actions?query=workflow%3ARuby)
 
 ![Material Icons for Rails](https://raw.githubusercontent.com/Angelmmiguel/material_icons/master/material.png)
 
