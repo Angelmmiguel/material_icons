@@ -205,24 +205,21 @@ Reference [#10](https://github.com/Angelmmiguel/material_icons/issues/10)
 
 # Tested on
 
-Tested with [Travis CI](https://travis-ci.org/Angelmmiguel/material_icons).
+Tested with [GitHub Actions](https://github.com/Angelmmiguel/material_icons/actions?query=workflow%3ARuby).
 
 Ruby versions:
 
-* 2.5.0
-* 2.4.3
-* 2.3.6
-* 2.2.9
-* 2.1.10
+* 2.6
+* 2.7
+* 3.0
+* 3.1
 
 Rails versions:
 
-* 3.2
-* 4.0
-* 4.1
-* 4.2
-* 5.0
-* master
+* 5.2
+* 6.0
+* 6.1
+* 7.0
 
 # They are using Material icons for Rails :)
 
@@ -234,4 +231,4 @@ Rails versions:
 
 Google Material Icons are under [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). _We'd love attribution in your app's about screen, but [it's not required](https://github.com/google/material-design-icons#license)_.
 
-Material Icons gem is released under the MIT license. Copyright [@Laux_es ;)](https://twitter.com/Laux_es)
+Material Icons gem is released under the MIT license. Copyright [Angel M Miguel](https://angel.kiwi)
