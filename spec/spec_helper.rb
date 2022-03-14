@@ -6,9 +6,6 @@ require File.expand_path('../dummy/config/environment.rb', __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
 
-require 'pry'
-require 'pry-nav'
-
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

@@ -3,7 +3,7 @@ require 'spec_helper'
 #
 # Check if icon are rendered on home view
 #
-describe 'home/index.html.erb' do
+describe 'home/index' do
   before :each do
     render
   end

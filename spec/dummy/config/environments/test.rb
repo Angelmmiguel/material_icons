@@ -29,14 +29,4 @@ Dummy::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-
-  # Asset digests allow you to set far-future HTTP expiration dates on all assets,
-  # yet still be able to expire them through the digest params.
-  config.assets.digest = true
-
-  # For old versions of rails
-  config.secret_token = 'hjksfkhjdaheuifkj23hkjdaDSDFAJSDFHleuiwfkdj23iurkejlfdbsfASDFiorjkhefd'
-
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
 end

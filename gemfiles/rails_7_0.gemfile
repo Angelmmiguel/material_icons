@@ -2,3 +2,6 @@ source 'https://rubygems.org'
 gemspec path: '../'
 
 gem 'rails', '~> 7.0'
+
+# Missing in Rails 7.0
+gem 'sprockets-rails', '~> 3.4'

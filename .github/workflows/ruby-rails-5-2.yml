@@ -1,4 +1,6 @@
-name: Ruby
+# The end of support for this version is 1st June 2022.
+# TODO: Remove this action once it reaches EOL.
+name: Ruby (Rails 5.2)
 
 on:
   push:
@@ -16,12 +18,8 @@ jobs:
       matrix:
         ruby-version:
         - '2.7'
-        - '3.0'
-        - '3.1'
-        gemfile:
-        - rails_6_0
-        - rails_6_1
-        - rails_7_0
+        gemfile: 
+        - rails_5_2
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
