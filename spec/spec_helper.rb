@@ -1,13 +1,8 @@
 # Base configuration for RSPEC
 ENV['RAILS_ENV'] ||= 'test'
-require 'coveralls'
-Coveralls.wear!
 require File.expand_path('../dummy/config/environment.rb', __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
-
-require 'pry'
-require 'pry-nav'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

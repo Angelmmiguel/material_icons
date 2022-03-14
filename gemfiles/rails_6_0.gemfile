@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 gemspec path: '../'
 
-gem 'rails', '~> 3.2'
-gem 'test-unit'
+gem 'rails', '~> 6.0'

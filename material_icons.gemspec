@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.2'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'capybara', '~> 2.4.4'
-  s.add_development_dependency 'coveralls', '~> 0.8.2'
   s.add_development_dependency 'pry', '~> 0.10.3'
   s.add_development_dependency 'pry-nav', '~> 0.2.4'
 end
