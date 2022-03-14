@@ -22,9 +22,9 @@ Then, execute `bundle install`.
 
 # CSS
 
-In your `app/assets/stylesheets/application.css.erb` file you need to reference material icons CSS. There are two versions: ligature or unicode (See [Compatibility](#compatibility) section for more info).
+In your `app/assets/stylesheets/application.css.erb` file you need to reference material icons CSS.
 
-Add this line at top of `application.css` to use ligature:
+Add this line at top of `application.css`:
 
 ```css
 /*
@@ -139,42 +139,7 @@ Opera | >= 15
 Apple MobileSafari | >= iOS 4.2
 Android Browser | >= 3.0
 
-To increase compatibility you can use Unicode version of the library. To set Unicode icons, you need to change the line to load ligature CSS file on `app/assets/stylesheets/application.css` (`*= require material_icons`) to this line:
-
-```css
-/*
-*= require material_icons_unicode
-*/
-```
-
-**NOTE**: Depending on the comment style of `application.css`, you may need to add `//= require material_icons_unicode` instead of the previous line. See [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives) for more info.
-
-Next, you need to specify the helper to use unicode because it uses ligatures by default. Create an initializer file on `config/initializers/material_icons.rb` and set this content:
-
-```ruby
-# Initialize material icons setup
-MaterialIcons.setup do |config|
-  config.unicode = true
-end
-```
-
-The [Helpers](#helpers) has the same syntax.
-
-Now, the text inside of HTML tag is the CSS class! CSS Icon classes use underscores.
-
-```html
-<i class="material-icons face"></i>
-<i class="mi md-36 face"></i>
-<i class="mi add_box"></i>
-<i class="mi three_d_rotation"></i>
-```
-
-This version increase the size of the CSS file too. To see the difference, these are the size for uncompressed CSS files:
-
-File | Size
----- | ----
-material_icons.css.erb | 3  KB
-material_icons_unicode.css.erb | 68 KB
+You can find the current browser support in [_can I use?_](https://caniuse.com/kerning-pairs-ligatures).
 
 # Common issues
 
