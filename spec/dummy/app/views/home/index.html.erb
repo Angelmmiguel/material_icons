@@ -1,10 +1,11 @@
 <h1>Testing Material icons gem!</h1>
 <h2>A set of icons</h2>
 
-<%= mi.face.r90 %>
-<%= material_icon.face.r90.md_24 %>
-<%# Special case %>
-<%= mi.three_d_rotation %>
+<%= mi.shape(:face).r90 %>
+<%# Define with a string %>
+<%= material_icon.shape('face').r90.md_24 %>
+<%# Shape with number %>
+<%= mi.shape('3d_rotation') %>
 
 <%# Safe join! %>
-<%= safe_join([mi.send.to_s, mi.book.to_s]) %>
+<%= safe_join([mi.shape(:send).to_s, mi.shape(:book).to_s]) %>

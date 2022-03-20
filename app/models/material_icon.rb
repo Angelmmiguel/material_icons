@@ -5,17 +5,6 @@ class MaterialIcon
   # To use content_tag
   include ActionView::Helpers::TagHelper
 
-  # Undefined method will ref to the icon.
-  def method_missing(name)
-    @icon =
-      if name == :class_icon
-        'class' # Set the icon named 'class'
-      else
-        clear_icon(name)
-      end
-    self
-  end
-
   #
   # Reset will set all variables to nil
   #
@@ -45,6 +34,21 @@ class MaterialIcon
   end
 
   #
+  # Set the shape of the icon you want to use
+  #
+  # == Paremeters:
+  # name::
+  #    String or symbol with icon name
+  #
+  # == Returns:
+  # MaterialIcon instance
+  #
+  def shape(name)
+    @icon = name.to_s
+    self
+  end
+
+  #
   # Add a CSS class to :i tag
   #
   # == Paremeters:
@@ -70,40 +74,8 @@ class MaterialIcon
   # MaterialIcon instance
   #
   def style(css_style = '')
-    if css_style && css_style.empty?
-      # It references style icon
-      @icon = clear_icon('style')
-    else
-      # User wants to apply a style to the icon
-      @style = css_style
-    end
+    @style = css_style
     self
-  end
-
-  # Create an alias to use the original method
-  alias_method :super_send, :send
-
-  #
-  # Override send functionality to set the name of the icon to "send" when
-  # the method doesn't receive any parameters
-  #
-  # == Paremeters:
-  # name::
-  #    Name of the method to call
-  # args::
-  #    Arguments to send the method
-  #
-  # == Returns:
-  # MaterialIcon instance or the result of the method call
-  #
-  def send(name = '', *args)
-    if name && name.empty?
-      @icon = clear_icon('send')
-      # Return self
-      self
-    else
-      super_send(name.to_sym, *args)
-    end
   end
 
   #
@@ -152,24 +124,5 @@ class MaterialIcon
   #
   def to_ary
     nil
-  end
-
-  private
-
-  #
-  # Convert icon names that start with a number to the correct format. On
-  # Material Design Icons version 2.0.0, unique conflict is the 3d-rotation
-  # icon
-  #
-  # == Parameters:
-  # icon:
-  #   String with the name of the icon
-  #
-  # == Returns:
-  # An string with filtered name of the icon
-  #
-  def clear_icon(icon)
-    return icon if icon != :three_d_rotation
-    '3d_rotation'
   end
 end
