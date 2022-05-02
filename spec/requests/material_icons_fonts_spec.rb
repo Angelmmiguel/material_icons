@@ -4,12 +4,6 @@ require 'spec_helper'
 # Check if the fonts are served on dummy APP
 #
 describe 'Home with icons', type: :request do
-  it 'serve EOT font' do
-    get '/assets/MaterialIcons-Regular.eot'
-    expect(response.content_length).to be > 0
-    expect(response).to have_http_status(200)
-  end
-
   it 'serve TTF font' do
     get '/assets/MaterialIcons-Regular.ttf'
     expect(response.content_length).to be > 0

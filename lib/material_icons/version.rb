@@ -3,6 +3,6 @@
 #
 module MaterialIcons
   # Version for the library and the gem
-  MATERIAL_ICONS_VERSION = '2.2.2'
-  VERSION = '2.2.1'
+  MATERIAL_ICONS_VERSION = '4.0.0'
+  VERSION = '4.0.0'
 end
