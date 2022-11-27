@@ -4,11 +4,11 @@ Gem::Specification.new do |s|
   s.name        = 'material_icons'
   s.version     = MaterialIcons::VERSION
   s.summary     = 'A simple Rails wrapper for Google Material Icons'
-  s.description = 'Add Google Material Icons in your Rails projects easily. It is a library with +900 icons ;)'
+  s.description = 'Add Google Material Icons in your Rails projects easily. It is a library with +2500 icons ;)'
   s.authors     = ['Angel M Miguel']
-  s.email       = 'angel@laux.es'
+  s.email       = 'hi@angel.kiwi'
   s.files       = Dir['{app,lib}/**/*'] + %w(Rakefile LICENSE README.md LICENSE_OF_FONTS)
-  s.homepage    = 'http://irb.rocks'
+  s.homepage    = 'https://github.com/Angelmmiguel/material_icons'
   s.require_paths = ['lib']
   s.licenses     = ['MIT', 'Apache-2.0']
 

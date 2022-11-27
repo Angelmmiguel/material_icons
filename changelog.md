@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0] 27-11-2022
+
+See the [GitHub releases page](https://github.com/Angelmmiguel/material_icons/releases)
+
 ## [2.2.1] 27-02-2017
 
 - Drop support for Ruby 1.9.3. Some gems require Ruby > 2 [#17](https://github.com/Angelmmiguel/material_icons/issues/17)
