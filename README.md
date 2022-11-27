@@ -4,13 +4,9 @@
 
 # Material Icons for Rails
 
-[Material Design Icons](https://google.github.io/material-design-icons/) is a **+900 set of icons** based on Material Design guidelines. You can check all the icons in the [official site](https://material.io/icons/).
+[Material Design Icons](https://google.github.io/material-design-icons/) is a **+2500 set of icons** based on Material Design guidelines. You can check all the icons in the [official site](https://fonts.google.com/icons?selected=Material+Icons).
 
 **This gem helps you to add this fantastic icon collection to your Rails projects easily**. I keep the gem updated so you always will have the latest icons in your project.
-
-## Google Material Icons v2.2.2
-
-Google updates Material Icons to [v2.2.2](https://github.com/google/material-design-icons/releases/tag/2.2.2). It's include 41 new icons!
 
 # Installation
 
@@ -36,9 +32,87 @@ Add this line at top of `application.css`:
 
 These files provide multiple CSS classes to use in your views. Main classes are:
 
-	.material-icons, .mi
+``` 
+.material-icons, .mi
+```
 
-Some CSS classes are provided too:
+## Other styles
+
+This gem supports the new Google Material Icons styles. They are imported as a different CSS stylesheet, so you can set only the icons that are required for your project. You can set just one style or several ones.
+
+Every CSS stylesheet includes everything you need to use that style. If you don't plan to use the regular style, feel free to include any of the next styles and remove the `*= require material_icons` line from your `application.css.erb` file.
+
+### Outlined
+
+```css
+/*
+*= require material_icons.outlined
+*/
+```
+
+Usage in your template:
+
+```
+<%= material_icon.face.outlined %>
+# <i class="material-icons outlined">face</i> 
+```
+
+### Sharp
+
+```css
+/*
+*= require material_icons.sharp
+*/
+```
+
+Usage in your template:
+
+```
+<%= material_icon.face.sharp %>
+# <i class="material-icons sharp">face</i> 
+```
+
+### Round
+
+```css
+/*
+*= require material_icons.round
+*/
+```
+
+Usage in your template:
+
+```
+<%= material_icon.face.round %>
+# <i class="material-icons round">face</i> 
+```
+
+### Two Tone
+
+```css
+/*
+*= require material_icons.twotone
+*/
+```
+
+Usage in your template:
+
+```
+<%= material_icon.face.twotone %>
+# <i class="material-icons twotone">face</i> 
+```
+
+## Helper classes
+
+This gem includes several helper sizes. To add them to your project, add the following stylesheet:
+
+```css
+/*
+*= require material_icons.helpers
+*/
+```
+
+After adding it, the following helpers will be available:
 
 ```
 /* Size */
@@ -72,9 +146,11 @@ An example of icon is:
 <i class="material-icons md-36">face</i>
 ```
 
-## Helpers
+## Ruby helpers
 
-Material Icons provide two helpers to build the HTML code of icons. The methods are `material_icon` and `mi`. These helpers use cascade style to set the icon and options. Using same example:
+Material Icons provide two helpers to build the HTML code of icons. The methods are `material_icon` and `mi`. These helpers use cascade style to set the icon and options. **[Remember you first need to add the helpers stylesheet to use these helpers](#helper-classes)**.
+
+Using same example:
 
 ```
 <%= material_icon.face %>
@@ -181,7 +257,6 @@ Ruby versions:
 
 Rails versions:
 
-* 5.2
 * 6.0
 * 6.1
 * 7.0

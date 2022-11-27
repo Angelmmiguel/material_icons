@@ -1,0 +1,37 @@
+/*
+ * CSS File of Material icons.
+ * CSS code based on:
+ * https://github.com/google/material-design-icons
+ */
+
+//= depend_on_asset "material-icons-twotone.woff2"
+//= depend_on_asset "material-icons-twotone.woff"
+
+/* Use the font */
+@font-face {
+  font-family: 'Material Icons TwoTone';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons TwoTone'),
+       local('MaterialIconsTwoTone-Regular '),
+       url('<%= font_path('material-icons-twotone.woff2') %>') format('woff2'),
+       url('<%= font_path('material-icons-twotone.woff') %>') format('woff');
+}
+
+/* Add round styles */
+.material-icons.twotone,
+.mi.twotone {
+  font-family: 'Material Icons TwoTone';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
