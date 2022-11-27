@@ -15,6 +15,13 @@ describe 'home/index' do
     expect(rendered).to have_selector('i.material-icons', text: '3d_rotation')
   end
 
+  it 'renders other styles' do
+    expect(rendered).to have_selector('i.material-icons.outlined', text: 'home')
+    expect(rendered).to have_selector('i.material-icons.sharp', text: 'home')
+    expect(rendered).to have_selector('i.material-icons.round', text: 'home')
+    expect(rendered).to have_selector('i.material-icons.twotone', text: 'home')
+  end
+
   it 'must render the using the safe_join method' do
     # Check the icons
     expect(rendered).to have_selector('i.material-icons', text: 'book')

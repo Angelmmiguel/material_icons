@@ -14,6 +14,16 @@ class MaterialIcon
   end
 
   #
+  # Define shape style methods
+  #
+  %w(outlined round sharp twotone).each do |shape_style|
+    define_method(shape_style) do
+      css_class(shape_style)
+      self
+    end
+  end
+
+  #
   # Define rotate methods
   #
   %w(r90 r180 r270 flip_horizontal flip_vertical).each do |rotation|
