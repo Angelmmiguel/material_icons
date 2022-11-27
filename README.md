@@ -36,6 +36,20 @@ These files provide multiple CSS classes to use in your views. Main classes are:
 .material-icons, .mi
 ```
 
+## Upgrade from v2.X to 4.X
+
+The `v4.X` version changed how the icon shapes are set. Before, this gem used a `method_missing` approach (`mi.face`). Due to the amount of conflicting icon shape names, in `v4.X` I introduced the `shape` method to set the icon shape:
+
+```ruby
+# In v2.X
+mi.face
+
+# In v4.X
+mi.shape(:face)
+```
+
+When upgrading to v4.X, you will need to update all the calls to the `mi` and `material_icon` helpers.
+
 ## Other styles
 
 This gem supports the new Google Material Icons styles. They are imported as a different CSS stylesheet, so you can set only the icons that are required for your project. You can set just one style or several ones.
@@ -53,7 +67,7 @@ Every CSS stylesheet includes everything you need to use that style. If you don'
 Usage in your template:
 
 ```
-<%= material_icon.face.outlined %>
+<%= material_icon.shape(:face).outlined %>
 # <i class="material-icons outlined">face</i> 
 ```
 
@@ -68,7 +82,7 @@ Usage in your template:
 Usage in your template:
 
 ```
-<%= material_icon.face.sharp %>
+<%= material_icon.shape(:face).sharp %>
 # <i class="material-icons sharp">face</i> 
 ```
 
@@ -83,7 +97,7 @@ Usage in your template:
 Usage in your template:
 
 ```
-<%= material_icon.face.round %>
+<%= material_icon.shape(:face).round %>
 # <i class="material-icons round">face</i> 
 ```
 
@@ -98,7 +112,7 @@ Usage in your template:
 Usage in your template:
 
 ```
-<%= material_icon.face.twotone %>
+<%= material_icon.shape(:face).twotone %>
 # <i class="material-icons twotone">face</i> 
 ```
 
@@ -153,23 +167,22 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 Using same example:
 
 ```
-<%= material_icon.face %>
+<%= material_icon.shape(:face) %>
 # <i class="material-icons">face</i>
 
-<%= material_icon.face.md_36 %>
+<%= material_icon.shape(:face).md_36 %>
 # <i class="material-icons md-36">face</i>
 
-# This is a special case because the icon name starts with a number. Only
-# 3d_rotation has this trouble.
-<%= material_icon.three_d_rotation.md_36 %>
+# You can use string too
+<%= material_icon.shape('3d_rotation').md_36 %>
 # <i class="material-icons md-36">3d_rotation</i>
 
 # Rotation and custom css class
-<%= mi.face.r90.css_class('my_class') %>
+<%= mi.shape(:face).r90.css_class('my_class') %>
 # <i class="material-icons r90 my_class">face</i>
 
 # Custom css and data attributes
-<%= mi.face.css_class('my_class').html(data: {id: 1}) %>
+<%= mi.shape(:face).css_class('my_class').html(data: {id: 1}) %>
 # <i data-id="1" class="material-icons my_class">face</i>
 ```
 
@@ -225,7 +238,7 @@ If you are using [Slim templating engine](http://slim-lang.com/) in your Rails a
 
 ```
 p.text
-  == material_icon.search.md_18
+  == material_icon.shape(:search).md_18
 ```
 
 Reference [#9](https://github.com/Angelmmiguel/material_icons/issues/9)
