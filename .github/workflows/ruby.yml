@@ -22,6 +22,7 @@ jobs:
         - rails_6_0
         - rails_6_1
         - rails_7_0
+        - rails_7_2
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby

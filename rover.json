@@ -7,6 +7,9 @@
   "packageManagers": [
     "rubygems"
   ],
+  "sandbox": {
+    "agentImage": "ghcr.io/angelmmiguel/rover-ruby/ruby:3.4"
+  },
   "taskManagers": [],
   "attribution": true
 }
