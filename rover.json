@@ -8,7 +8,8 @@
     "rubygems"
   ],
   "sandbox": {
-    "agentImage": "ghcr.io/angelmmiguel/rover-ruby/ruby:3.4"
+    "agentImage": "ghcr.io/angelmmiguel/rover-ruby/ruby:3.4",
+    "initScript": "scripts/rover-init.sh"
   },
   "taskManagers": [],
   "attribution": true
