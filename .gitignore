@@ -14,3 +14,4 @@ spec/dummy/db/*.sqlite3
 
 # gemfile.lock
 gemfiles/*.lock
+.rover/

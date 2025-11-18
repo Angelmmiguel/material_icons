@@ -1,0 +1,12 @@
+{
+  "version": "1.2",
+  "languages": [
+    "ruby"
+  ],
+  "mcps": [],
+  "packageManagers": [
+    "rubygems"
+  ],
+  "taskManagers": [],
+  "attribution": true
+}
