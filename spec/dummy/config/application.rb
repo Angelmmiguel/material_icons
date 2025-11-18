@@ -1,5 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
+# Ruby 3.2+ compatibility: Logger is now a separate gem
+require 'logger'
+
 # Pick the frameworks you want:
 require "action_view/railtie"
 require "sprockets/railtie"
